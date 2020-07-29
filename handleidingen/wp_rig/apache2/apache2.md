@@ -57,8 +57,8 @@
 1. Het resultaat is:
     * `php7.4 (enabled by maintainer script)`
 1. Controlleer of PHP nu wel werkt:
-    `firefox http://127.0.0.1/index.php`
-
+    * `firefox http://127.0.0.1/index.php`
+    
 ## Apache2 - Maak nieuwe virtual host aan
 
 1. Maak een niewe direcory bijvoorbeeld `site_010_wordpress` aan waar je files komen:

@@ -25,7 +25,7 @@ Aanloggen op onderstaande site van onze hosting provider netcup.eu
 1. Ga naar `Products` en selecteer `Order`
 1. Je ziet de tekst `Login successful` en kiest `Server`
 1. Selecteer `Order now >` onder de te bestellen server (normaal zal dit een VPS 200 G8 zijn voor Standaard en een VPS 1000 G9 zijn voor Professioneel).
-1. Selecteer `Add to cart >`|
+1. Selecteer `Add to cart >`
 1. Via `< Continue purchase, I want to complete the order later.` kan je meerdere servers te gelijk bestellen.
 1. Zijn alle benodigde servers gekozen, kies dan `Open cart to complete purchase. >`.
 1. Controleer de selectie, gebruik `X delete` of voeg producten toe, indien nodig, selecteer `Continue order >` als de bestelling compleet is.
@@ -53,7 +53,7 @@ Voor onderstaande stappen uit, na ontvangst van de email van `server@netcup.de` 
    ```
 1. Een `VNC Console` popup scherm, toont de console installatie.
 1. De installatie duurt ongeveer:
-    * 6 minuten voor Ubuntu 18.04 (op een `VPS 2000 G8`)
+    * 6 minuten voor Ubuntu 18.04 (op een `VPS 200 G8`)
     * 4 minuten voor Ubuntu 20.04 (op een `VPS 1000 G9`)
 1. Wacht op de ontvangst van deze email `Neuinstallation Ihres Servers`
 1. Sla de "English version:" van de email op in de `uOnlineBewaarBox`, onder:

@@ -215,7 +215,7 @@ Als alle voorgaande hoofdstukken zijn uitgevoerd, maak dan een nieuwe "Offline S
 1. Stel de juiste rechten in:    
     `sudo chmod -R 755 /var/www/html`
 1. Zet de juiste gegevens in de `wp-config.php`-file:
-    * `sudo mv /var/www/html/wordpress/wp-config-sample.php /var/www/html/wp-config.php`
+    * `sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
     * `sudo vi /var/www/html/wp-config.php`
 1. Verander deze 3 regels:
     ```

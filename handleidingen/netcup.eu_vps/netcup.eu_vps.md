@@ -52,7 +52,8 @@ Voor onderstaande stappen uit, na ontvangst van de email van `server@netcup.de` 
    ```
 1. Een `VNC Console` popup scherm, toont de console installatie.
 1. De installatie duurt ongeveer:
-    * 6 minuten voor Ubuntu 18.04 (op een `VPS 2000 G8`)
+    * 6 minuten voor Ubuntu 18.04 (op een `VPS 200 G8`)
+    * 8 minuten voor Ubuntu 20.04 (op een `VPS 200 G8`)
     * 4 minuten voor Ubuntu 20.04 (op een `VPS 1000 G9`)
 1. Wacht op de ontvangst van deze email `Neuinstallation Ihres Servers`
 1. Sla de "English version:" van de email op in de `uOnlineBewaarBox`, onder:

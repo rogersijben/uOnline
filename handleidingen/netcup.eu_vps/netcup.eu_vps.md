@@ -186,13 +186,13 @@ Als alle voorgaande hoofdstukken zijn uitgevoerd, maak dan een nieuwe "Offline S
 1. Maak een nieuwe database aan:
     * `create database wordpressdb;`
 1. Maak een nieuwe database gebruiker aan voor WordPress:
-    * `create user 'wpdbuser'@'localhost' identified by '{wachtwoord}';`
+    * `create user wpdbuser'@'localhost identified by '{wachtwoord}';`
 1. Geef de gebruiker alle rechten op de database:
     `grant all on wordpressdb.* TO 'wpdbuser'@'localhost' WITH GRANT OPTION;`
 1. Flush priviliges:
     * `flush privileges;`
 1. Controlleer de rechten voor de gebruiker:
-    * `show privileges for {wpdbuser}@localhost`
+    * `show grants for 'wpdb'@'localhost';`
 1. Exit:
     * `exit;`
 
@@ -203,7 +203,7 @@ Als alle voorgaande hoofdstukken zijn uitgevoerd, maak dan een nieuwe "Offline S
 1. Download de laatse versie van WordPress:
     * `wget https://wordpress.org/latest.tar.gz` 
 1. Pak het gedownloade bestand uit:
-    *  `tar -zxvf /tar/latest.tar.gz`
+    *  `tar -zxvf /latest.tar.gz`
 1. Verwijder de `/var/www/html/` directory:
     * `rm -rf /var/www/html`
 1. Verplaats de `wordpress` directory naar `/var/www/html`

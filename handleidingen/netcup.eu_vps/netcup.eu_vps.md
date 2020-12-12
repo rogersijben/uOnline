@@ -186,13 +186,13 @@ Als alle voorgaande hoofdstukken zijn uitgevoerd, maak dan een nieuwe "Offline S
 1. Maak een nieuwe database aan:
     * `create database wordpressdb;`
 1. Maak een nieuwe database gebruiker aan voor WordPress:
-    * `create user wpdbuser'@'localhost identified by '{wachtwoord}';`
+    * `create user 'wpdbuser'@'localhost' identified by '{wachtwoord}';`
 1. Geef de gebruiker alle rechten op de database:
-    `grant all on wordpressdb.* TO 'wpdbuser'@'localhost' WITH GRANT OPTION;`
+    * `grant all on wordpressdb.* TO 'wpdbuser'@'localhost' WITH GRANT OPTION;`
 1. Flush priviliges:
     * `flush privileges;`
 1. Controlleer de rechten voor de gebruiker:
-    * `show grants for 'wpdb'@'localhost';`
+    * `show grants for 'wpdbuser'@'localhost';`
 1. Exit:
     * `exit;`
 
@@ -203,7 +203,7 @@ Als alle voorgaande hoofdstukken zijn uitgevoerd, maak dan een nieuwe "Offline S
 1. Download de laatse versie van WordPress:
     * `wget https://wordpress.org/latest.tar.gz` 
 1. Pak het gedownloade bestand uit:
-    *  `tar -zxvf /latest.tar.gz`
+    *  `tar -zxvf latest.tar.gz`
 1. Verwijder de `/var/www/html/` directory:
     * `rm -rf /var/www/html`
 1. Verplaats de `wordpress` directory naar `/var/www/html`
@@ -211,16 +211,16 @@ Als alle voorgaande hoofdstukken zijn uitgevoerd, maak dan een nieuwe "Offline S
 1. Verwijder de gedownloade download:
     * `rm /tmp/latest.tar.gz`
 1. Stel nu de juiste eigenaar in:
-    `sudo chown -R www-data:www-data /var/www/html`
+    * `sudo chown -R www-data:www-data /var/www/html`
 1. Stel de juiste rechten in:    
-    `sudo chmod -R 755 /var/www/html`
+    * `sudo chmod -R 755 /var/www/html`
 1. Zet de juiste gegevens in de `wp-config.php`-file:
     * `sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
     * `sudo vi /var/www/html/wp-config.php`
 1. Verander deze 3 regels:
     ```
-    define( 'DB_NAME', '{wpdatabase}' );
-    define( 'DB_USER', '{wpdatabasegebruiker}' );
+    define( 'DB_NAME', 'wordpressdb' );
+    define( 'DB_USER', 'wpdbuser' );
     define( 'DB_PASSWORD', '{wpdatabasewachtwoord}';
     ```
 1. Open WordPress:
